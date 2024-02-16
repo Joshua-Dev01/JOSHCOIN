@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.center img{
+    width: 50%;
+    margin-top: 9rem;
+}
+.loading{
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+
+ .loading .line-box{
+     padding: 1px;
+     width: 70%;
+     border: 2px solid #828282; 
+     border-radius: 80px; 
+ }
+ .loading .line-box .line{
+    height: 20px;
+    border-radius: 20px;
+    background:repeating-linear-gradient(-45deg, transparent, transparent 2px, rgb(115, 0, 255) 2px, blue 5px);  
+    animation: loading 7s forwards cubic-bezier(0,0,0,0)  infinite;
+ }
+ @keyframes loading{
+     0%{
+         width:10%;
+     }
+     100%{
+         width: 100%;
+     }
+ }

@@ -1,0 +1,338 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background: rgb(237, 237, 237); */
+}
+
+.bar{
+    display: flex;
+    background: blue;
+    padding: 0.5rem;
+    position: fixed;
+    transition: 0.6s;
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    font-size: 1rem;
+    font-weight: lighter;
+    top: 0;
+    color: white;
+}
+.btn-open-close{
+    font-weight: 600;
+    font-size: 2rem;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+}
+.bar p{
+    margin-left: 28rem;
+    margin-top: 1rem;
+}
+.bar input[type=text] {
+    width: 7rem;
+    text-align: center;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  .fa-search{
+    margin-left: -2rem;
+    margin-top: 0.7rem;
+    color: gray;
+    font-size: 0.8rem;
+  }
+
+.bar input, .bar input:focus{
+    padding: -1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    width: 17rem;
+    height: 2rem;
+    margin-left: 5rem;
+    background-color: gainsboro;
+}
+.fa-user-circle{
+    margin-left: 3rem;
+    color: rgb(255, 255, 255);
+    font-size: 2.2rem;
+    padding: 1rem;
+    margin-top: -0.5rem;
+    border-radius: 1.5rem;
+}
+#red{
+    background: red;
+    padding: 0.3rem;
+}
+.dash{
+    position: fixed;
+    background:blue;
+    margin-top: -2rem;
+    width: 13rem;
+    margin-bottom: -5rem;
+    color: white;
+    height: auto;
+    padding-top: 11rem;
+    padding-bottom: 11.7rem;
+    transition: 0.6s;
+}
+.fa-bars-staggered {
+    font-size: 1.5rem;
+}
+.dash h3{
+    margin-top: -3.5rem;
+    margin-left: 2rem;
+    margin-bottom: 7rem;
+}
+.dash p{
+    margin-top: 3rem;
+    margin-left: 1.8rem;
+    cursor: pointer;
+}
+.dash-header{
+    display: flex;
+    margin-top: 2rem;
+    background:white;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 8%;
+    height: auto;
+}
+.chart{
+    margin-left: 10rem;
+}
+.chart h1{
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(1, 46, 74);
+}
+.grid-item-0{
+   width: 35rem;
+}
+.grid-item-0 h5{
+    margin-bottom: 1rem;
+    
+}
+.grid-item-0 p{
+    margin-top:0.rem; 
+    margin-bottom: -1rem; 
+    font-size: 0.6rem;
+     margin-left: -1.5rem;
+}
+#pan {
+     border-top: 1px solid gray;
+     padding-right:30rem;
+     margin-left: rem;
+     margin-top: -0.8rem;
+}
+
+#pat{
+    border: 0.4rem solid blue;
+    padding-top: 4.7rem;
+    margin:-10rem 0 0 0.3rem ;
+    animation: loading 7s forwards cubic-bezier(0,0,0,0) ;
+   
+}
+@keyframes loading{
+    0%{
+        width:10%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+#pats{
+    border: 0.4rem solid rgb(0, 189, 0);
+    padding-top: 2rem;
+    background:  rgb(0, 189, 0);
+    margin-left:  1.7rem;
+  
+}
+.charting{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    gap: 0.7rem;
+    margin-left: 2rem;
+    grid-auto-flow: dense;
+    grid-auto-columns: auto;
+}
+.flex{
+    display: flex;
+    margin-top: -4.7rem;
+    margin-left: -27rem;
+    height: 19.3rem;
+}
+
+[class^='grid-item']{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 1rem gray;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    
+}
+.grid-item-1{
+    /* grid-row: 2 / 2;
+      margin-left:5.5rem ;
+      grid-column: 2 / 1;
+      height: 15rem*/
+      width: 22.5rem;
+      height: 8rem;
+      margin-left: -25rem;  
+}
+.grid-item-1 h4{
+    color: rgb(0, 189, 0);
+    font-size: 1.3em;
+}
+.grid-item-2{
+    /* grid-column:2 / span 1 ;
+    grid-column: 2 / -1; */
+    height: 20rem;
+    width: 35rem;
+    
+}
+.grid-item-3{
+  width: 14rem;
+}
+.load{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    margin-top: -2rem;
+    font-size: 0.8rem;
+}
+.load em{
+    margin-left: 1.5rem;
+}
+.load p{
+      height: 0.4rem; 
+      width: 6rem; 
+    background: blue;
+   margin-left: -1rem;
+   margin-bottom: -1rem;
+   animation: loading 2s both cubic-bezier(1,2,0,0) infinite;
+}
+ @keyframes loading{
+    200%{
+        width:100%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.load i{
+   margin-left: -0.6rem;
+   margin-top: -0.3rem;
+}
+.grid-item-4{
+    width:8rem;
+    margin-left: -1.5rem;
+    position: relative;
+}
+
+.earning{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.grid-item-2 h5{
+    margin-top: 1rem;
+}
+.fa-arrow-down,  .fa-star, .fa-dollar{
+    color: blue;
+    font-size: 1.5rem;
+}
+#loc{
+    display: flex;
+    gap: 1rem;
+    margin-top: -3rem;
+    margin-left: 15rem;
+}
+.fa-location{
+    color: blue;
+}
+.grid-item-2 em {
+    display:grid;
+    grid-template-columns: repeat(2,2fr);
+   margin-top: -8rem;
+   margin-left: -9rem;
+}
+.date{
+    margin-left: 2rem;
+    color: rgb(87, 87, 87);
+}
+.grid-item-5 h5{
+    color: blue;
+    margin-left: 1rem;
+}
+
+.grid-item-5 p{
+    width: 15rem;
+    font-size: 0.8rem;
+}
+.grid-item-5 h4{
+    font-size: 0.8rem;
+}
+.grid-item-5{
+    display:flex ;
+    width:22.6rem;
+    margin-top: 2.5rem;
+    margin-left: 39.7rem;
+    height:5rem;
+}
+.loader {
+  border: 10px solid blue;
+  border-radius: 50%;
+  border-top: 10px solid  rgb(0, 189, 0);
+  width: 65px;
+  height: 65px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite ;
+  position:relative;
+}
+
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(60deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.grid-item-4 h1{
+  width:50px;
+  height:50px;
+  padding:15px 12px 15px 12px;
+  background-color:blue;
+  color:white;
+   border-radius: 50%;
+   font-size:16px;
+   position:relative;
+   left:14px;
+   text-align: center;
+   margin-left: -5px;
+   bottom:5.5rem;
+}
+.para{
+    margin-left:6px;
+      margin-top:  -6.5rem;
+}
+
+
+@media (max-width:500px){
+    .charting, .flex{
+      display: flex;
+     flex-wrap: wrap;
+    }
+}
+
+

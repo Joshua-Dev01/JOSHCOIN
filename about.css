@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    display: flex;
+    padding: 10px;
+    position: fixed;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 0 0.3rem;
+   
+}
+form img{
+    width: 40%;
+    height: 70%;
+    border-radius: 50px;
+}
+@media(max-width:850px){
+    form img{
+        width: 70%;
+    }
+}
+.logo h2{
+    margin-left: -1.5rem;
+    margin-top: 1rem;
+    color: black;
+}
+form{
+    margin-top: 8rem;
+    box-shadow: 0 0 0 3px grey;
+    width: 80%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-top: 2rem;
+    animation: 5s turn infinite;
+    z-index: -99px;
+}
+@keyframes turn{
+
+    to{ box-shadow:0 0 3px blue; }
+    50%{
+        border-radius: 100px;
+    }
+}
+.get{
+    display: flex;
+   flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+}
+label{
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.user input{
+    width: 90%;
+    padding:5%;
+    margin-bottom: 2rem;
+}
+form h1{
+    text-align: center;
+}
+form button{
+    margin: 0 0 1rem 0;
+    padding: 0.5rem 3rem;
+    border: none ;
+    text-transform: uppercase;
+    font: 15px uppercase Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    animation: change 10s infinite;
+}
+@keyframes change{
+    from{background-color: blue;}
+    to{ background-color: red; }
+}
